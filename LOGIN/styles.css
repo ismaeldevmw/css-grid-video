@@ -111,14 +111,15 @@ body {
   font-weight: bold;
   height: 50px;
   letter-spacing: 1px;
-  margin: 10px 0;
+	margin: 10px 0;
+	outline: none;
 }
 .footer {
   display: flex;
   align-items: center;
-  height: 100px;
+  min-height: 100px;
   width: 100%;
-  background-color: #8F57FD;
+	background-color: #8F57FD;
 }
 .footer a {
   color: white;
@@ -129,4 +130,16 @@ body {
 }
 .footer a:hover {
   text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+	.login__container {
+		background-color: transparent;
+		border: none;
+		padding: 0px;
+		width: 100%;
+	}
+	.footer {	
+		align-items: flex-start;
+		flex-direction: column;	
+	}
 }
